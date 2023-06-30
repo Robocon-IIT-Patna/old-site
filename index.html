@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Robocon IIT Patna</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Your HTML code here -->
+
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="gallery.html">Gallery</a></li> <!-- Added gallery link -->
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      
+      <h1 class="title">Team Phoenix</h1>
+      <p>We are a club dedicated to robotics and automation.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Provide information about the club, its goals, and achievements.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <p>Showcase some of the past and ongoing projects of the club.</p>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+   
+    <div class="container">
+      <h2>Our Team</h2>
+      
+    </div>
+  
+  </section>
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <p>Explore our amazing robot photos!</p>
+      <a href="gallery.html" class="gallery-button">View Gallery</a> <!-- Added gallery shortcut button -->
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources">
+    <div class="container">
+      <h2>Resources</h2>
+      <div class="resource-cards">
+        <!-- Resource cards -->
+        <div class="resource-card">
+          <h3>Annual Report</h3>
+          <a href="annual_report.pdf">Download</a>
+        </div>
+        <div class="resource-card">
+          <h3>Technical Documentation</h3>
+          <a href="technical_documentation.pdf">Download</a>
+        </div>
+        <div class="resource-card">
+          <h3>Sponsorship Brochure</h3>
+          <a href="sponsorship_brochure.pdf">Download</a>
+        </div>
+        <div class="resource-card">
+          <h3>Financial Documentation</h3>
+          <a href="financial_documentation.pdf">Download</a>
+        </div>
+        <div class="resource-card">
+          <!-- Add more resource cards here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Include a contact form or contact details for inquiries.</p>
+    </div>
+  </section>
+  <img src="./src/background.png" alt="Background Image" class="background-image" height="100%" width="100%" style="opacity: 70%;">
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Robocon IIT Patna. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script>
+    // Your JavaScript code snippet here
+    var tl = gsap.timeline({ repeat: -1 });
+    tl.to("h1", { duration: 50, backgroundPosition: "-960px 0" });
+  </script>
+</body>
+</html>

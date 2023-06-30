@@ -1,0 +1,312 @@
+@font-face {
+  font-family: 'Casanova Scotia';
+  src: url('./src/font/Casanova Scotia.otf') format('opentype');
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+    background-color: #0e0e0e;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+  }
+  /* Add a parallax effect to the background image */
+#home {
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 166, 0);
+  opacity: 0.7;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Apply fade-in effect to elements as they come into view */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+}
+  /* Navigation Bar */
+  nav {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+  }
+  body {
+    background-color: #1d1d1d;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    max-width: 100%;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Casanova Scotia", cursive;
+    color: #000000;
+    align-items: center;
+  }
+  
+  .title {
+    background-image: url(./src/text-bg.png);
+    background-attachment: fixed;
+    font-family: "Casanova Scotia", cursive;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    justify-self: center;
+    align-self: center;
+  }
+    
+  /* Home Section */
+  #home {
+    font-family: "Casanova Scotia", cursive;
+
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 166, 0);
+    opacity: 0.7;
+  }
+  
+  #home h1 {
+    max-width: 75%;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Casanova Scotia", cursive;
+    color: #540032;
+  }
+   h2 
+  {
+    font-family: "Casanova Scotia", cursive;
+
+  }
+  
+  #home p {
+    font-size: 24px;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 18px;
+  }
+  
+  /* Projects Section */
+  #projects {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #projects p {
+    font-size: 18px;
+  }
+  
+  /* Team Section */
+  #team {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    color: orange;
+    text-align: center;
+  }
+  
+  #team h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .contact-card {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .contact-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .contact-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .contact-card p {
+    font-size: 18px;
+  }
+  
+  /* Gallery Section */
+  #gallery {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #gallery p {
+    font-size: 18px;
+  }
+  
+  .gallery-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .gallery-button:hover {
+    background-color: #555;
+  }
+  
+  /* Resources Section */
+  #resources {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #resources h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .resource-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .resource-card {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .resource-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .resource-card a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .resource-card a:hover {
+    background-color: #555;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  /* body {
+    canvas {
+      display: block;
+      cursor: crosshair;
+    }
+    background-color: #333;
+  } */
+  #contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 18px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
