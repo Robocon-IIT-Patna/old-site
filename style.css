@@ -12,7 +12,7 @@ body {
   }
   
   .container {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     align-items: center;
@@ -39,7 +39,7 @@ body {
 /* Apply fade-in effect to elements as they come into view */
 .fade-in {
   opacity: 0;
-  transition: opacity 0.8s ease;
+  transition: opacity 10s ease;
 }
 
 .fade-in.is-visible {
@@ -49,6 +49,10 @@ body {
   nav {
     background-color: #f5f5f5;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
   }
   
   nav ul {
@@ -249,9 +253,8 @@ body {
   
   .resource-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
-    flex-wrap: wrap;
   }
   
   .resource-card {
@@ -279,9 +282,12 @@ body {
   
   /* Contact Section */
   #contact {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 50px 0;
     text-align: center;
+    background-image: url(./src/new-bg.png);
+    background-size: 100%;
+    
   }
   /* body {
     canvas {
@@ -291,22 +297,26 @@ body {
     background-color: #333;
   } */
   #contact h2 {
+    color:orange;
     font-size: 36px;
     margin-bottom: 20px;
   }
   
   #contact p {
+    color:orange ;
     font-size: 18px;
   }
   
   /* Footer */
   footer {
-    background-color: #f5f5f5;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #ff797900;
+    /* padding: 10px 20px; */
+    text-align: right;
+    height: 20px;
   }
   
   footer p {
     font-size: 16px;
+    color: orange;
   }
   
