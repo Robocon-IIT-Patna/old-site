@@ -46,31 +46,48 @@ body {
   opacity: 1;
 }
   /* Navigation Bar */
-  nav {
-    background-color: #f5f5f5;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
+nav {
+  width: 100%;
+  height: 50px;
+  background: rgb(0, 0, 0);
+  /* add shadow and animation */
+  box-shadow: 0 5px 10px rgba(0,0,0, .8);
+  /* center the elements */
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
 
-  }
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0 100px;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(255, 132, 0);
+  background-color: #000000;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 50px; /**  Rarely used! **/
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: rgb(255, 132, 0);
+  color: #000000;
   
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px;
-  }
+} 
+
   body {
     background-color: #1d1d1d;
     margin: 0;
@@ -101,6 +118,8 @@ body {
     -webkit-background-clip: text;
     justify-self: center;
     align-self: center;
+    margin: 0 auto;
+    padding: 0 20px;
   }
     
   /* Home Section */
@@ -285,7 +304,6 @@ body {
     /* background-color: #fff; */
     padding: 50px 0;
     text-align: center;
-    background-image: url(./src/new-bg.png);
     background-size: 100%;
     
   }
@@ -297,13 +315,13 @@ body {
     background-color: #333;
   } */
   #contact h2 {
-    color:orange;
+    color:rgb(255, 255, 255);
     font-size: 36px;
     margin-bottom: 20px;
   }
   
   #contact p {
-    color:orange ;
+    color:rgb(255, 255, 255) ;
     font-size: 18px;
   }
   
@@ -317,6 +335,7 @@ body {
   
   footer p {
     font-size: 16px;
+    font-weight: 500;
     color: orange;
   }
   
