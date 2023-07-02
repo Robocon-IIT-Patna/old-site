@@ -1,68 +1,107 @@
-:root {
-    --primary-color: #ff8c00;
-    --secondary-color: #000000;
-    font-family: 'Casanova Scotia', cursive;
-  }
-  @font-face {
-    font-family: 'Casanova Scotia';
-    src: url('./src/font/Casanova Scotia.otf') format('opentype');
-  }
-  html, body {
-    background-color: var(--secondary-color);
-    margin: 5px;
-    --font-family: 'Jura', sans-serif;
-  }
-.year-heading{
-    font-size: 2em;
-    font-family: casanova scotia;
-    color: #FF8C00;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway;
+  background-color: #202125;
+}
+
+.heading {
     text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+@font-face {
+  src: url('./src/font/Casanova Scotia.otf') format('opentype');
+}
+h1{
+  font-family: casanova scotia;
+  color: orange;
+}
+p{
+  font-family: casanova scotia;
+  color: orange;
+}
+/* General Styles */
+body {
+  color: orange;
     margin: 0;
     padding: 0;
-}
-.title {
-  /* set background img to a  png /src/text-bg.png */
-  background-image: url(../src/text-bg.png);  
-  background-attachment: fixed;
-  font-family: 'Casanova Scotia', cursive;
-  -webkit-text-fill-color: transparent;
-}
-.team
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
-    /* add #ff8c00 text color and some effects also make it responsive */
-    color: #FF8C00;
-}
-  .container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    grid-auto-rows: 120px;
-    grid-auto-flow: dense;
-  }
-  
-  .gallery-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-family: var(--font-family);
-    font-size: 2em;
-  }
-  
-  .gallery-card a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .gallery-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, .2);
+    font-family: 'casanova', sans-serif;
+    background-color: #0e0e0e;
   }
   
