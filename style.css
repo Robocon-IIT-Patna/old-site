@@ -71,7 +71,6 @@ nav {
 }
 
 /* Style for each Instagram post */
-.instagram-post {}
 
 /* Style the embedded Instagram post */
 .instagram-post .instagram-media {
@@ -142,7 +141,6 @@ h1 {
   background-attachment: fixed;
   font-family: "Casanova Scotia", cursive;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   justify-self: center;
   align-self: center;
   margin: 0 auto;
@@ -440,10 +438,6 @@ footer p {
   font-weight: 500;
   color: orange;
 }
-
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 
 /* other */
 .info {
