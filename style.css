@@ -57,7 +57,38 @@ nav {
   justify-content: center;
   position: sticky;
   top: 0;
+  font: casanova scotia;
 }
+
+/* Container to hold the Instagram posts */
+.instagram-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 3%;
+  margin-right: 3%;
+  
+}
+
+/* Style for each Instagram post */
+.instagram-post {
+  
+}
+
+/* Style the embedded Instagram post */
+.instagram-post .instagram-media {
+  max-width: 100%;
+}
+
+/* Adjust the style of the embedded post as needed */
+.instagram-post .instagram-media a {
+  background: #FFA500; /* Orange background */
+}
+
+.instagram-post .instagram-media a:hover {
+  opacity: 0.8; /* Add an opacity effect on hover */
+}
+
 
 nav ul {
   display: flex;
