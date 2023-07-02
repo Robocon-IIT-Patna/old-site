@@ -137,8 +137,13 @@ h1 {
 }
 
 .title {
+  color: orange; /* Add a color for the text */
+  font-size: 100px; /* Increase font-size */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   background-image: url(./src/text-bg.png);
-  background-attachment: fixed;
+  background-attachment: relative;
+  background-position: center bottom; /* Set the background image position */
   font-family: "Casanova Scotia", cursive;
   -webkit-text-fill-color: transparent;
   justify-self: center;
@@ -146,6 +151,7 @@ h1 {
   margin: 0 auto;
   padding: 0 20px;
 }
+
 
 /* Home Section */
 #home {
