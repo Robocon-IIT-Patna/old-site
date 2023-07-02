@@ -5,25 +5,25 @@
 
 /* General Styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Jura', sans-serif;
-    background-color: #0e0e0e;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    align-items: center;
-  }
-  /* Add a parallax effect to the background image */
+  margin: 0;
+  padding: 0;
+  font-family: 'Jura', sans-serif;
+  background-color: #0e0e0e;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+}
+
+/* Add a parallax effect to the background image */
 #home {
   background-image: url("image.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,14 +45,15 @@ body {
 .fade-in.is-visible {
   opacity: 1;
 }
-  /* Navigation Bar */
+
+/* Navigation Bar */
 nav {
   width: 100%;
   height: 50px;
   background: rgb(0, 0, 0);
-  /* add shadow and animation */
-  box-shadow: 0 5px 10px rgba(0,0,0, .8);
-  /* center the elements */
+  /* Add shadow and animation */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  /* Center the elements */
   display: flex;
   justify-content: center;
   position: sticky;
@@ -67,13 +68,10 @@ nav {
   justify-content: space-evenly;
   margin-left: 3%;
   margin-right: 3%;
-  
 }
 
 /* Style for each Instagram post */
-.instagram-post {
-  
-}
+.instagram-post {}
 
 /* Style the embedded Instagram post */
 .instagram-post .instagram-media {
@@ -88,7 +86,6 @@ nav {
 .instagram-post .instagram-media a:hover {
   opacity: 0.8; /* Add an opacity effect on hover */
 }
-
 
 nav ul {
   display: flex;
@@ -116,261 +113,255 @@ nav ul li a:hover,
 nav ul li a.active {
   background: rgb(255, 132, 0);
   color: #000000;
-  
-} 
+}
 
-  body {
-    background-color: #1d1d1d;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .wrapper {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  h1 {
-    max-width: 100%;
-    font-size: 100px;
-    text-align: center;
-    font-family: "Casanova Scotia", cursive;
-    color: #000000;
-    align-items: center;
-  }
-  
-  .title {
-    background-image: url(./src/text-bg.png);
-    background-attachment: fixed;
-    font-family: "Casanova Scotia", cursive;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    justify-self: center;
-    align-self: center;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-    
-  /* Home Section */
-  #home {
-    font-family: "Casanova Scotia", cursive;
+body {
+  background-color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+}
 
-    background-image: url("image.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: rgb(255, 166, 0);
-    opacity: 0.7;
-  }
-  
-  #home h1 {
-    max-width: 75%;
-    font-size: 100px;
-    text-align: center;
-    font-family: "Casanova Scotia", cursive;
-    color: #540032;
-  }
-   h2 
-  {
-    font-family: "Casanova Scotia", cursive;
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
-  
-  #home p {
-    font-size: 24px;
-  }
-  
-  /* About Section */
-  #about {
-    background-color: #f5f5f5;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  #about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  #about p {
-    font-size: 18px;
-  }
-  
-  /* Projects Section */
-  #projects {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  #projects h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  #projects p {
-    font-size: 18px;
-  }
-  
-  /* Team Section */
-  #team {
-    background-color: #f5f5f5;
-    padding: 50px 0;
-    color: orange;
-    text-align: center;
-  }
-  
-  #team h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .team-members {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  
-  .contact-card {
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .contact-card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-  }
-  
-  .contact-card h3 {
-    font-size: 24px;
-    margin: 10px 0;
-  }
-  
-  .contact-card p {
-    font-size: 18px;
-  }
-  
-  /* Gallery Section */
-  #gallery {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  #gallery h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  #gallery p {
-    font-size: 18px;
-  }
-  
-  .gallery-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  .gallery-button:hover {
-    background-color: #555;
-  }
-  
-  /* Resources Section */
-  #resources {
-    background-color: #f5f5f5;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  #resources h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .resource-cards {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-  
-  .resource-card {
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .resource-card h3 {
-    font-size: 24px;
-    margin: 10px 0;
-  }
-  
-  .resource-card a {
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-  }
-  
-  .resource-card a:hover {
-    background-color: #555;
-  }
-  
-  /* Contact Section */
-  #contact {
-    /* background-color: #fff; */
-    padding: 50px 0;
-    text-align: center;
-    background-size: 100%;
-    
-  }
-  /* body {
-    canvas {
-      display: block;
-      cursor: crosshair;
-    }
-    background-color: #333;
-  } */
-  #contact h2 {
-    color:rgb(255, 255, 255);
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  #contact p {
-    color:rgb(255, 255, 255) ;
-    font-size: 18px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #ff797900;
-    /* padding: 10px 20px; */
-    text-align: right;
-    height: 20px;
-  }
-  
-  footer p {
-    font-size: 16px;
-    font-weight: 500;
-    color: orange;
-  }
-  
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+h1 {
+  max-width: 100%;
+  font-size: 100px;
+  text-align: center;
+  font-family: "Casanova Scotia", cursive;
+  color: #000000;
+  align-items: center;
+}
+
+.title {
+  background-image: url(./src/text-bg.png);
+  background-attachment: fixed;
+  font-family: "Casanova Scotia", cursive;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  justify-self: center;
+  align-self: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Home Section */
+#home {
+  font-family: "Casanova Scotia", cursive;
+
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 166, 0);
+  opacity: 0.7;
+}
+
+#home h1 {
+  max-width: 75%;
+  font-size: 100px;
+  text-align: center;
+  font-family: "Casanova Scotia", cursive;
+  color: #540032;
+}
+
+h2 {
+  font-family: "Casanova Scotia", cursive;
+}
+
+#home p {
+  font-size: 24px;
+}
+
+/* About Section */
+#about {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#projects p {
+  font-size: 18px;
+}
+
+/* Team Section */
+#team {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  color: orange;
+  text-align: center;
+}
+
+#team h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  margin: 10px;
+  text-align: center;
+}
+
+.contact-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.contact-card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.contact-card p {
+  font-size: 18px;
+}
+
+/* Gallery Section */
+#gallery {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#gallery h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#gallery p {
+  font-size: 18px;
+}
+
+.gallery-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.gallery-button:hover {
+  background-color: #555;
+}
+
+/* Resources Section */
+#resources {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#resources h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.resource-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.resource-card {
+  margin: 10px;
+  text-align: center;
+}
+
+.resource-card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.resource-card a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.resource-card a:hover {
+  background-color: #555;
+}
+
+/* Contact Section */
+#contact {
+  /* background-color: #fff; */
+  padding: 50px 0;
+  text-align: center;
+  background-size: 100%;
+
+  /* Add shadow and animation */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+#contact h2 {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background-color: #ff797900;
+  /* padding: 10px 20px; */
+  text-align: right;
+  height: 20px;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 500;
+  color: orange;
+}
+
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -384,7 +375,6 @@ p {
   color: #2e2e2e;
   margin-bottom: 20px;
 }
-
 
 /* block-$ */
 .block-effect {
@@ -401,6 +391,8 @@ p {
   overflow: hidden;
 
   animation: revealBlock 0s var(--t) forwards;
+  /* Add shadow and animation */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 .block-reveal::after {
@@ -417,7 +409,6 @@ p {
   background: var(--bc);
   animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
 }
-
 
 /* animations */
 @keyframes revealBlock {
@@ -446,7 +437,6 @@ p {
   100% {
     transform: translateX(100%);
   }
-
 }
 
 .abs-site-link {
@@ -456,10 +446,18 @@ p {
   color: hsla(0, 0%, 0%, .6);
   font-size: 16px;
 }
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+section
+{
+  scroll-behavior: smooth;
+  scrollbar-color: orange;
+  scrollbar-width: thin;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
 }
