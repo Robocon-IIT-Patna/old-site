@@ -461,6 +461,7 @@ padding: 16px,32px;
 
 .team-back
 {
+  background-image: url(./src/Screenshot\ 2023-07-03\ 181302.png);
 	width:100%;
 	height:auto;
 	position:absolute;
@@ -468,7 +469,8 @@ padding: 16px,32px;
 	left:0;
 	padding:5px 15px 0 15px;
 	text-align:left;
-	background:#ff6f00;
+	/* set image as background */
+
 	
 }
 .row
@@ -500,6 +502,7 @@ padding: 16px,32px;
 .our-team-main:hover
 {
 	border-color:#ff6f00;
+  background-image: url(./src/Screenshot\ 2023-07-03\ 181302.png);
 	transition:0.5s;
 }
 /* Footer */
