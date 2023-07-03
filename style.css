@@ -135,6 +135,22 @@ h1 {
   color: #000000;
   align-items: center;
 }
+.btn-neomorphic {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  box-shadow: 6px 6px 12px rgba(163, 177, 198, 0.6), -6px -6px 12px rgba(255, 255, 255, 0.5);
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-neomorphic:hover {
+  transform: translate(4px, 4px);
+  box-shadow: 4px 4px 8px rgba(163, 177, 198, 0.6), -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
 
 .title {
   color: orange; /* Add a color for the text */
