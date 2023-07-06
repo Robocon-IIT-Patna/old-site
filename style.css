@@ -459,6 +459,7 @@ padding: 16px,32px;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  padding: 20px;
 }
 
 .resource-card {
@@ -466,27 +467,16 @@ padding: 16px,32px;
   text-align: center;
 }
 
-.resource-card h3 {
-  font-size: 24px;
-  margin: 10px 0;
-}
-
-.resource-card a {
-  text-decoration: none;
-  font-size: 18px;
-  padding: 5px 10px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
-}
 .instagram-container {
  display: inline-block;
   margin: 10px;
   
 }
 
-.resource-card a:hover {
-  background-color: #555;
+
+.resource-card
+{
+  margin: 10px;
 }
 
 /* Contact Section */
