@@ -12,6 +12,8 @@
 <script src="app.js" defer></script>
 <script src="/src/three.min.js"></script>
 <script src="/src/vanta.globe.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
 <body>
@@ -68,120 +70,70 @@
     
   </section>
 
-  <section id="team">
-    <div id="vantajs">
-      <div class="container">
-        <div class="row">
-          <!-- Add col-lg-1 classes to each card to fit 8 cards per row -->
-          <div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <link id="heading-font" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&display=swap" media="all" />
+ 
+  
+  <section class="team bg-white antialiased">
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div class="text-center mb-10 lg:mb-14">
+        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">Meet the crew</h2>
+        <p class="mt-1 text-orange-900">Creative people</p>
+      </div>
+      <div class="grid grid-cols-4 lg:grid-cols-4 gap-6">
+        <div class="flex items-center gap-3">
+          <img class="rounded-lg w-40 h-40" alt="No alt" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=900&amp;h=900&amp;q=80" />
+          <div class="flex flex-col">
+            <h3 class="font-3xl text-orange-1800">David Forren</h3>
+            <p class="mt-1 text-2xl uppercase text-orange-1500">Founder / CEO</p>
           </div>
-          <div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
-          </div><div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="our-team-main">
-              <div class="team-front">
-                <img src="http://placehold.it/110x110/2196f3/fff?text=Dilip" class="img-fluid rounded-square" />
-                <h3>Dilip Kevat</h3>
-              </div>      
-            </div>
-          </div>
-          <!-- Repeat the above code for each card -->
-          
         </div>
+        <div class="flex items-center gap-3">
+          <img class="rounded-lg w-40 h-40" alt="No alt" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=900&amp;h=900&amp;q=80" />
+          <div class="flex flex-col">
+            <h3 class="font-3xl text-orange-1800">David Forren</h3>
+            <p class="mt-1 text-2xl uppercase text-orange-1500">Founder / CEO</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <img class="rounded-lg w-40 h-40" alt="No alt" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=900&amp;h=900&amp;q=80" />
+          <div class="flex flex-col">
+            <h3 class="font-3xl text-orange-1800">David Forren</h3>
+            <p class="mt-1 text-2xl uppercase text-orange-1500">Founder / CEO</p>
+          </div>
+        </div><div class="flex items-center gap-3">
+          <img class="rounded-lg w-40 h-40" alt="No alt" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=900&amp;h=900&amp;q=80" />
+          <div class="flex flex-col">
+            <h3 class="font-3xl text-orange-1800">David Forren</h3>
+            <p class="mt-1 text-2xl uppercase text-orange-1500">Founder / CEO</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <img class="rounded-lg w-40 h-40" alt="No alt" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=900&amp;h=900&amp;q=80" />
+          <div class="flex flex-col">
+            <h3 class="font-3xl text-orange-1800">David Forren</h3>
+            <p class="mt-1 text-2xl uppercase text-orange-1500">Founder / CEO</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <img class="rounded-lg w-40 h-40" alt="No alt" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=900&amp;h=900&amp;q=80" />
+          <div class="flex flex-col">
+            <h3 class="font-3xl text-orange-1800">David Forren</h3>
+            <p class="mt-1 text-2xl uppercase text-orange-1500">Founder / CEO</p>
+          </div>
+        </div>
+        <!-- Add more team member cards here -->
       </div>
-      <div class="container">
-        <h2>Our Team</h2>
-      </div>
+      
     </div>
   </section>
   
-  
   <!-- Gallery Section -->
 
-<section id="gallery" class="slide-in">
+<section id="gallery">
+  <div id="vantajs">
   <div class="container">
     <h2>Gallery</h2>
     <p>Explore our amazing robot photos!</p>
@@ -189,22 +141,23 @@
       <div class="row">
         <div class="photo">
           <img src="/src/gallery/IMG_5891.JPG" >
-          <div class="year"><a href="gallery.html"><button class="btn btn-neomorphic">Year</button></a></div>
+          <div class="year"><a href="gallery.html"><button class="animate-pulse btn btn-neomorphic">Year</button></a></div>
         </div>
         <div class="photo">
           <img src="/src/gallery/IMG_5891.JPG" >
-          <div class="year"><a href="gallery.html"><button class="btn btn-neomorphic">Year</button></a></div>
+          <div class="year"><a href="gallery.html"><button class="animate-pulse btn btn-neomorphic">Year</button></a></div>
           
         </div>
         <div class="photo">
           <img src="/src/gallery/IMG_5891.JPG" >
-          <div class="year"><a href="gallery.html"><button class="btn btn-neomorphic">Year</button></a></div>
+          <div class="year"><a href="gallery.html"><button class="animate-pulse btn btn-neomorphic">Year</button></a></div>
         </div>
       </div>
       
     </div>
-    <a href="gallery.html" style="margin-top: 50px;"><button class="btn btn-neomorphic">Click Me</button></a> <!-- Added gallery shortcut button -->
+    <a href="gallery.html" style="margin-top: 50px;"><button class="animate-pulse btn btn-neomorphic">Click Me</button></a> <!-- Added gallery shortcut button -->
   </div>
+</div>
 </section>
 
   <!-- Resources Section -->
@@ -226,25 +179,25 @@
       <h2>Resources</h2>
       <div>
         <h3>Robotics Handbook</h3>
-        <a href="robotics_handbook.pdf"><button class="btn btn-neomorphic">Click Me</button></a>
+        <a href="robotics_handbook.pdf"><button class="animate-pulse btn btn-neomorphic">Click Me</button></a>
       </div>
       <div class="resource-cards"  >
         <!-- Resource cards -->
         <div class="resource-card">
           <h3>Annual Report</h3>
-          <a href="annual_report.pdf"><button class="btn btn-neomorphic">Click Me</button></a>
+          <a href="annual_report.pdf"><button class="animate-pulse btn btn-neomorphic">Click Me</button></a>
         </div>
         <div class="resource-card">
           <h3>Technical Documentation</h3>
-          <a href="technical_documentation.pdf"><button class="btn btn-neomorphic">Click Me</button></a>
+          <a href="technical_documentation.pdf"><button class="animate-pulse btn btn-neomorphic">Click Me</button></a>
         </div>
         <div class="resource-card">
           <h3>Sponsorship Brochure</h3>
-          <a href="sponsorship_brochure.pdf"><button class="btn btn-neomorphic">Click Me</button></a>
+          <a href="sponsorship_brochure.pdf"><button class="animate-pulse btn btn-neomorphic">Click Me</button></a>
         </div>
         <div class="resource-card">
           <h3>Financial Documentation</h3>
-          <a href="financial_documentation.pdf"><button class="btn btn-neomorphic">Click Me</button></a>
+          <a href="financial_documentation.pdf"><button class="animate-pulse btn btn-neomorphic">Click Me</button></a>
         </div>
         
       </div>
