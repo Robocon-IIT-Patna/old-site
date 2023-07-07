@@ -287,16 +287,9 @@ h2 {
 
 /* About Section */
 #about {
-  color: white;
-    /*neomorphic shadow and glow  */
-    box-shadow: 6px 6px 12px rgba(163, 177, 198, 0.6), -6px -6px 12px rgba(255, 255, 255, 0.5);
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  background-color: #f5f5f5;
   padding: 50px 0;
   text-align: center;
-  background-color: #000000a6;
-  /* add bg image */
-  background-image: url(./src/about-us-bg.png);
-  background-attachment:scroll;
 }
 
 #about h2 {
@@ -306,7 +299,6 @@ h2 {
 
 #about p {
   font-size: 18px;
-  color: white;
 }
 
 /* Projects Section */
@@ -327,7 +319,7 @@ h2 {
 
 /* Team Section */
 #team {
-  background-color: #f5f5f5;
+  background-color: #f5f5f527;
   padding:  0;
   color: orange;
   text-align: center;
@@ -335,7 +327,7 @@ h2 {
 
 #team h2 {
   font-size: 36px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .team-members {
@@ -346,19 +338,19 @@ h2 {
 }
 
 .contact-card {
-  margin: 0px;
+  margin: 10px;
   text-align: center;
 }
 
 .contact-card img {
   width: 150px;
-  height: max-content;
+  height: 150px;
   border-radius: 3%;
 }
 
 .contact-card h3 {
   font-size: 24px;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .contact-card p {
@@ -367,19 +359,18 @@ h2 {
 
 /* Gallery Section */
 #gallery {
-  padding: 20px 0;
+  background-color: #fff;
+  padding: 50px 0;
   text-align: center;
-  color: orange;
 }
 
 #gallery h2 {
   font-size: 36px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #gallery p {
   font-size: 18px;
-  color: orange;
 }
 
 .gallery-button {
@@ -511,34 +502,89 @@ padding: 16px,32px;
   color: rgb(255, 255, 255);
   font-size: 18px;
 }
-.team-member {
+.our-team-main
+{
+	width:max-content;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#ff6f00;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin:18px;
+  /* add animation here */
+  animation: revealBlock 0s var(--t) forwards;
+  /* Add shadow and animation */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.our-team-main img
+{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 90px;
+}
+
+.our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+  background-image: url(./src/Screenshot\ 2023-07-03\ 181302.png);
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	/* set image as background */
+
+	
+}
+.row
+{
   display: flex;
-  align-items: center;
-  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#000000;
+	padding:5px;
+	bottom:0px;
+	transition: all 0.5s ease;
 }
 
-.team-member img {
-  border-radius: 10px;
-  width: 80px;
-  height: 80px;
+
+.our-team-main:hover .team-front
+{
+	bottom:-20px;
+	transition: all 0.5s ease;
 }
 
-.team-member .member-details {
-  display: flex;
-  flex-direction: column;
-}
-
-.team-member h3 {
-  font-weight: 500;
-  color: #333;
-  font-size: 16px;
-}
-
-.team-member p {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #666;
-  margin-top: 2px;
+.our-team-main:hover
+{
+	border-color:#ff6f00;
+  background-image: url(./src/Screenshot\ 2023-07-03\ 181302.png);
+	transition:0.5s;
 }
 /* Footer */
 footer {
@@ -547,35 +593,7 @@ footer {
   text-align: right;
   height: 20px;
 }
-/* Adjust the spacing between cards */
-.row.justify-content-center > .col-lg-1 {
-  padding: 5px;
-}
 
-/* Add media queries for responsive spacing */
-@media (max-width: 1199px) {
-  .row.justify-content-center > .col-lg-1,
-  .row.justify-content-center > .col-md-2 {
-    padding: 5px;
-  }
-}
-
-@media (max-width: 991px) {
-  .row.justify-content-center > .col-lg-1,
-  .row.justify-content-center > .col-md-2,
-  .row.justify-content-center > .col-sm-3 {
-    padding: 5px;
-  }
-}
-
-@media (max-width: 767px) {
-  .row.justify-content-center > .col-lg-1,
-  .row.justify-content-center > .col-md-2,
-  .row.justify-content-center > .col-sm-3,
-  .row.justify-content-center > .col-4 {
-    padding: 5px;
-  }
-}
 footer p {
   font-size: 16px;
   font-weight: 500;
