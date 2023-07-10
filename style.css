@@ -29,7 +29,7 @@ body {
   background-image: url("image.jpg");
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,7 @@ body {
 
 #videoDiv {
   width: 100%;
-  height: calc(100vh - 50px); /* Subtract the height of the navigation bar */
+  height: auto; /* Subtract the height of the navigation bar */
   position: relative;
   overflow: hidden;
 }
@@ -90,18 +90,19 @@ body {
 /* Navigation Bar */
 nav {
   width: 100%;
-  height: 50px;
   background: rgb(0, 0, 0);
   /* Add shadow and animation */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
   /* Center the elements */
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   position: sticky;
+  text-decoration: none;
   top: 0;
   font: casanova scotia;
   z-index: 9999;
 }
+
 @mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
   &:after {
     position: absolute;
@@ -137,13 +138,29 @@ nav {
   background-color: #151823;
   animation: textColor 10s ease infinite;
   @include backlight(0, 5vw, 5vw, 0.75, #0fffc1, #7e0fff, 10s);
-    
-  @keyframes textColor {
-    0% { color: #7e0fff; }
-    50% { color: #0fffc1; }
-    100% { color: #7e0fff; }
-  }
+  
+  text-decoration: none; /* Remove underlining */
 }
+
+.glow a {
+  color: #5d5e5f; /* Set default link color */
+  text-decoration: none; /* Remove underlining */
+}
+
+.glow a:hover {
+  color: orange; /* Set link color on hover */
+}
+
+.glow a.active {
+  color: orange; /* Set active link color */
+}
+
+@keyframes textColor {
+  0% { color: #7e0fff; }
+  50% { color: #0fffc1; }
+  100% { color: #7e0fff; }
+}
+
 /* Container to hold the Instagram posts */
 .instagram-container {
   display: flex;
@@ -185,7 +202,6 @@ nav ul li a {
   color: rgb(255, 132, 0);
   background-color: #000000;
   padding: 0 10px;
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 50px; /**  Rarely used! **/
@@ -255,7 +271,6 @@ h1 {
 Home Section
 #home {
   font-family: "Casanova Scotia", cursive;
-
   background-image: url("image.jpg");
   background-size: cover;
   background-position: center;
@@ -327,7 +342,7 @@ h2 {
 
 #team h2 {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .our-team-main
 {
@@ -350,9 +365,9 @@ h2 {
 
 .our-team-main img
 {
-	border-radius:50%;
-	margin-bottom:20px;
-	width: 90px;
+	border-radius:10%;
+	margin-bottom:2px;
+	width: 120px;
 }
 
 .our-team-main h3
@@ -406,7 +421,7 @@ h2 {
 
 .our-team-main:hover .team-front
 {
-	bottom:-20px;
+	bottom:-10px;
 	transition: all 0.5s ease;
 }
 
