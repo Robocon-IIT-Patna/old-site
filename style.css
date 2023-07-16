@@ -355,6 +355,7 @@ h2 {
 	overflow:hidden;
 	position:relative;
 	transition:0.5s;
+  justify-content: space-between;
 	margin:18px;
   /* add animation here */
   animation: revealBlock 0s var(--t) forwards;
@@ -365,7 +366,7 @@ h2 {
 
 .our-team-main img
 {
-	border-radius:10%;
+	border-radius:50%;
 	margin-bottom:2px;
 	width: 120px;
 }
@@ -434,17 +435,19 @@ h2 {
 
 /* Gallery Section */
 #gallery {
-  background-color: #fff;
-  padding: 50px 0;
+  background-color: #000000;
+  padding:  0;
   text-align: center;
 }
 
 #gallery h2 {
+  color: orange;
   font-size: 36px;
   margin-bottom: 20px;
 }
 
 #gallery p {
+  color: orange;
   font-size: 18px;
 }
 
