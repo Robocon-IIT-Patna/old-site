@@ -486,6 +486,9 @@ gap: 20px;
 .photo {
 position: relative;
 width: 30%;
+border-radius: 7%;
+/* add neomorphic shadow and effects */
+box-shadow: 6px 6px 12px rgba(74, 75, 78, 0.6), -6px -6px 12px rgba(255, 255, 255, 0.5);
 }
 
 .photo img{
