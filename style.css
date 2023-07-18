@@ -303,7 +303,7 @@ h2 {
 
 /* About Section */
 #about {
-  background-color: #DC5F00;
+  background-color: #ffc89e;
   padding: 50px 0;
   text-align: center;
 }
@@ -438,7 +438,7 @@ h2 {
 
 /* Gallery Section */
 #gallery {
-  background-color: #000000;
+  background-color: rgb(232, 232, 232);
   padding:  0;
   text-align: center;
 }
@@ -526,7 +526,7 @@ padding: 16px,32px;
 
 /* Resources Section */
 #resources {
-  background-color: #f5f5f5;
+  background-color: #581e1e;
   padding: 50px 0;
   text-align: center;
 }
@@ -534,6 +534,7 @@ padding: 16px,32px;
 #resources h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .resource-cards {
@@ -541,8 +542,14 @@ padding: 16px,32px;
   justify-content: space-evenly;
   align-items: flex-start;
   padding: 20px;
+  color: rgb(0, 0, 0);
+  /* add a text shadow */
+  text-shadow: 1px 1px 2px #00000097;
 }
-
+.shadow
+{
+  text-shadow: 1px 1px 2px #00000097;
+}
 .resource-card {
   margin: 10px;
   text-align: center;
