@@ -335,70 +335,6 @@ h2 {
   font-size: 18px;
 }
 
-/* Team Section */
-#team {
-  background-color: #f5f5f527;
-  padding:  0;
-  color: #DC5F00;
-  text-align: center;
-}
-
-#team h2 {
-  font-size: 36px;
-  margin-bottom: 5px;
-}
-.our-team-main
-{
-	width:max-content;
-	height:auto;
-	border-bottom:5px #323233 solid;
-	background:#ff6f00;
-	text-align:center;
-	border-radius:10px;
-	overflow:hidden;
-	position:relative;
-	transition:0.5s;
-  justify-content: space-between;
-	margin:18px;
-  /* add animation here */
-  animation: revealBlock 0s var(--t) forwards;
-  /* Add shadow and animation */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
-}
-
-
-.our-team-main img
-{
-	border-radius:50%;
-	margin-bottom:2px;
-	width: 120px;
-}
-
-.our-team-main h3
-{
-	font-size:20px;
-	font-weight:700;
-}
-
-.our-team-main p
-{
-	margin-bottom:0;
-}
-
-.team-back
-{
-  background-image: url(./src/Screenshot\ 2023-07-03\ 181302.png);
-	width:100%;
-	height:auto;
-	position:absolute;
-	top:0;
-	left:0;
-	padding:5px 15px 0 15px;
-	text-align:left;
-	/* set image as background */
-
-	
-}
 .team-cards{
   display: flex;
   flex-direction: column;
@@ -453,7 +389,74 @@ h2 {
   color: #DC5F00;
   font-size: 18px;
 }
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(232, 232, 232);
+}
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.team-card {
+  width: calc(100% / 10);
+  max-width: 150px;
+  margin: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  padding: 0px;
+  text-align: center;
+}
+
+.team-card img {
+  width: 150px; /* Adjust the desired fixed width */
+  height: 150px; /* Adjust the desired fixed height */
+  object-fit: cover;
+  border-radius: 90%;
+}
+
+.team-card h3 {
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 1468px) {
+  .team-card {
+    width: calc(100% / 4);
+    max-width: 200px;
+  }
+
+  .team-card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team-card {
+    width: calc(100% / 2);
+    max-width: 150px;
+  }
+
+  .team-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
 .gallery-button {
   display: inline-block;
   padding: 10px 20px;
@@ -734,7 +737,7 @@ section
   scroll-behavior: smooth;
   scrollbar-color: #DC5F00;
   scrollbar-width: thin;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+ 
 }
 
 /* Scroll to Load*/
