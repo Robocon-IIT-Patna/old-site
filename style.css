@@ -34,7 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: rgb(255, 166, 0);
+  color:#DC5F00;
   opacity: 0.7;
   background-attachment: fixed;
   background-position: center;
@@ -51,6 +51,7 @@ body {
 }
 
 #video1 {
+  width: 100%;
   margin: auto;
   display: block;
   max-width: 100%;
@@ -81,7 +82,7 @@ body {
 :root {
   --stripe-size: 100px;
   --color1: #FF6600;
-  /* Orange */
+  /* #DC5F00 */
   --color2: #000000;
   /* Black */
   --duration: 2s; }
@@ -148,11 +149,11 @@ nav {
 }
 
 .glow a:hover {
-  color: orange; /* Set link color on hover */
+  color: #DC5F00; /* Set link color on hover */
 }
 
 .glow a.active {
-  color: orange; /* Set active link color */
+  color: #DC5F00; /* Set active link color */
 }
 
 @keyframes textColor {
@@ -179,7 +180,7 @@ nav {
 
 /* Adjust the style of the embedded post as needed */
 .instagram-post .instagram-media a {
-  background: #FFA500; /* Orange background */
+  background: #FFA500; /* #DC5F00 background */
 }
 
 .instagram-post .instagram-media a:hover {
@@ -252,7 +253,7 @@ h1 {
 }
 
 .title {
-  color: orange; /* Add a color for the text */
+  color: #DC5F00; /* Add a color for the text */
   font-size: 100px; /* Increase font-size */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -302,7 +303,7 @@ h2 {
 
 /* About Section */
 #about {
-  background-color: #f5f5f5;
+  background-color: #DC5F00;
   padding: 50px 0;
   text-align: center;
 }
@@ -310,9 +311,11 @@ h2 {
 #about h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: black;
 }
 
 #about p {
+  color: #000000;
   font-size: 18px;
 }
 
@@ -336,7 +339,7 @@ h2 {
 #team {
   background-color: #f5f5f527;
   padding:  0;
-  color: orange;
+  color: #DC5F00;
   text-align: center;
 }
 
@@ -441,13 +444,13 @@ h2 {
 }
 
 #gallery h2 {
-  color: orange;
+  color: #DC5F00;
   font-size: 36px;
   margin-bottom: 20px;
 }
 
 #gallery p {
-  color: orange;
+  color: #DC5F00;
   font-size: 18px;
 }
 
@@ -516,7 +519,7 @@ opacity: 1;
 
 .text {
 background-color: black;
-color: orange;
+color: #DC5F00;
 font-size: 16px;
 padding: 16px,32px;
 }
@@ -592,7 +595,7 @@ footer {
 footer p {
   font-size: 16px;
   font-weight: 500;
-  color: orange;
+  color: #DC5F00;
 }
 
 /* other */
@@ -687,7 +690,7 @@ p {
 section
 {
   scroll-behavior: smooth;
-  scrollbar-color: orange;
+  scrollbar-color: #DC5F00;
   scrollbar-width: thin;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
 }
