@@ -546,9 +546,14 @@ padding: 16px,32px;
   /* add a text shadow */
   text-shadow: 1px 1px 2px #00000097;
 }
+.vantajs
+{
+  height: fit-content;
+  width: fit-content;
+}
 .shadow
 {
-  text-shadow: 1px 1px 2px #00000097;
+  text-shadow: 2px 2px 4px #00000094;
 }
 .resource-card {
   margin: 10px;

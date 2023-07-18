@@ -16,6 +16,8 @@
   <script src="app.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
   <script src="/src/vanta.globe.min.js"></script>
+  <script src="/src/vanta.dots.min.js"></script>
+
 
 </head>
 
@@ -52,7 +54,7 @@
 
     <div class="container reveal">
       <h2>About Us</h2>
-      <p>Provide information about the club, its goals, and achievements.</p>
+      <p>Team Phoenix is IIT Patna's contingent to the largest and oldest pan-asian robotics contest, ABU ROBOCON. </p>
 
 
       <div class="instagram-container">
@@ -154,11 +156,10 @@
 
   <!-- Gallery Section -->
 
-  <section id="gallery" >
-    
+  <section id="gallery" class="shadow" >
+  
     <div class="container reveal">
       <h2>Gallery</h2>
-      <p>Explore our amazing robot photos!</p>
       <div class="gallerypreview">
         <div class="row">
           <div class="photo">
@@ -181,9 +182,8 @@
       <a href="gallery.html" style="margin-top: 50px;"><button class="btn btn-neomorphic">Gallery</button></a>
       <!-- Added gallery shortcut button -->
     </div>
-    <div id="vantajs">
+    
       <h2>Resources</h2>
-      <div>
         
       <div class="resource-cards">
         <!-- Resource cards -->
@@ -205,6 +205,7 @@
         </div>
 
       </div>
+    </div>
     </div>
   </section>
 
@@ -246,10 +247,9 @@
       </div>
     </footer>
 
-    <script src="three.r134.min.js"></script>
-    <script src="vanta.globe.min.js"></script>
+    
     <script>
-    VANTA.GLOBE({
+    VANTA.DOTS({
       el: "#vantajs",
       mouseControls: true,
       touchControls: true,
@@ -258,10 +258,10 @@
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
-      color: 0xf57503,
-      color2: 0x8f8f8f,
-      size: 1.60,
-      backgroundColor: 0xe8e8e8
+      backgroundColor: 0x202020,
+      size: 2.10,
+      spacing: 18.00,
+      showLines: false
     })
     </script>
 
