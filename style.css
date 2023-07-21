@@ -361,19 +361,6 @@ h2 {
 }
 
 
-.our-team-main:hover .team-front
-{
-	bottom:-10px;
-	transition: all 0.5s ease;
-}
-
-.our-team-main:hover
-{
-	border-color:#ff6f00;
-  background-image: url(./src/Screenshot\ 2023-07-03\ 181302.png);
-	transition:0.5s;
-}
-
 /* Gallery Section */
 #gallery {
   background-color: rgb(232, 232, 232);
@@ -404,10 +391,10 @@ h2 {
 }
 
 .team-card {
-  width: calc(100% / 10);
-  max-width: 170px;
-  margin: 10px;
-  background-color: #f2f2f2;
+  width: calc(100% / 12);
+  max-width: 150px;
+  margin: 6px;
+  background-color: #ebebeb;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
@@ -438,8 +425,8 @@ h2 {
 
 @media screen and (max-width: 1468px) {
   .team-card {
-    width: calc(100% / 4);
-    max-width: 200px;
+    width: calc(100% / 5);
+    max-width: 170px;
   }
 
   .team-card img {
