@@ -253,7 +253,7 @@ h1 {
 }
 
 .title {
-  color: #DC5F00; /* Add a color for the text */
+  color: #000000; /* Add a color for the text */
   font-size: 100px; /* Increase font-size */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -266,6 +266,8 @@ h1 {
   align-self: center;
   margin: 0 auto;
   padding: 0 20px;
+  /* orange  glow around the text */
+ /* text-shadow: orange 3px 0 10px; */
 }
 
 
