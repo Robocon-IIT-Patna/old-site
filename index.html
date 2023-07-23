@@ -38,19 +38,35 @@
     </ul>
   </nav>
 
-  <!-- Home Section -->
- <div id="videoDiv" style="overflow: hidden;">
-  <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="" style="height: 100%;">
-    <source src="/src/video2.mp4" type="video/mp4">
-  </video>
-  <div id="videoMessage" class="stylizng">
-    <h1 class="title">Team Phoenix</h1>
-    <h2 style="color: rgb(255, 123, 0); font-weight: 500; font-size: larger;">ROBOCON AND COMPETITIVE ROBOTICS, IIT PATNA</h2>
+  <style>
+    /* Add this style to create the dark overlay */
+    #videoOverlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity by changing the last value (0.4 in this case) */
+      z-index: 1; /* Make sure the overlay appears on top of the video */
+    }
+  </style>
+  
+  <div id="videoDiv" style="overflow: hidden; position: relative;">
+    <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="" style="height: 100%; z-index: 0;">
+      <source src="/src/video2.mp4" type="video/mp4">
+    </video>
+    <div id="videoOverlay"></div> <!-- Add the overlay div here -->
+    <div id="videoMessage" class="stylizng" style="z-index: 2;">
+      <h1 class="title">Team Phoenix</h1>
+      <h2 style="color: rgb(255, 123, 0); font-weight: 500; font-size: x-large; justify-self: center;">ROBOCON AND COMPETITIVE ROBOTICS<br> Indian Institute of Technology <b>PATNA</b></h2>
+    </div>
   </div>
-</div>
+    
 
   <!-- About Section -->
+  
   <section id="about" data-mdb-animation-start="onScroll" class="slide-in">
+    
 
     <div class="container reveal">
       <h2>About Us</h2>
@@ -348,10 +364,8 @@
         </div>
       </section>
   <!-- Resources Section -->
-  <!DOCTYPE html>
-  <html>
 
-  <head>
+
     <style>
       #bg-wrap {
         height: 10vh;
@@ -402,7 +416,9 @@
       }
       
     }
+
   </script>
+  
 </body>
 
 </html>

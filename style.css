@@ -373,6 +373,10 @@ h2 {
   font-size: 36px;
   margin-bottom: 20px;
 }
+#particles-js {
+    background: black;
+    height: 100vh;
+}
 
 #gallery p {
   color: #DC5F00;
@@ -725,8 +729,7 @@ section
 {
   scroll-behavior: smooth;
   scrollbar-color: #DC5F00;
-  scrollbar-width: thin;
- 
+  scrollbar-width: thin; 
 }
 
 /* Scroll to Load*/
