@@ -395,7 +395,7 @@ h2 {
 }
 
 .team-card {
-  width: calc(100% / 12);
+  width: calc(100% / 10);
   max-width: 150px;
   margin: 6px;
   background-color: #ebebeb;
