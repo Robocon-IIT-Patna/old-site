@@ -4,19 +4,17 @@
 <head>
   <link rel="icon" href="./src/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.globe.min.js">
   <link rel="stylesheet" href="http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   <meta charset="UTF-8">
   <title>Robocon IIT Patna</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet/less" href="styles.less">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   <script src="app.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
-  <script src="/src/vanta.globe.min.js"></script>
-  <script src="/src/vanta.dots.min.js"></script>
 
 
 </head>
@@ -56,20 +54,92 @@
       <source src="/src/video2.mp4" type="video/mp4">
     </video>
     <div id="videoOverlay"></div> <!-- Add the overlay div here -->
-    <div id="videoMessage" class="stylizng" style="z-index: 2;">
+    <div id="videoMessage" class="stylizng" style="z-index:99;">
       <h1 class="title">Team Phoenix</h1>
-      <h2 style="color: rgb(255, 123, 0); font-weight: 500; font-size: x-large; justify-self: center;">ROBOCON AND COMPETITIVE ROBOTICS<br> Indian Institute of Technology <b>PATNA</b></h2>
+    <h2 style="color: rgb(255, 123, 0); font-weight: 500; font-size: x-large; justify-self: center;">ROBOCON AND COMPETITIVE ROBOTICS<br> Indian Institute of Technology <b>PATNA</b></h2>
     </div>
   </div>
     
 
   <!-- About Section -->
   
-  <section id="about" data-mdb-animation-start="onScroll" class="slide-in">
+  <section id="about" data-mdb-animation-start="onScroll" class="slide-in parallax">
     
+    
+<style>
+  .sample-slider{
+      width:50%;
+  }
+  .sample-slider img{
+      width: 100%;
+      height: auto;
+  }
+</style>
+<style>
+  .parallax {
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
+
+<div class="swiper sample-slider">
+  <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./src/gallery/poster one.jpg"></div>
+      <div class="swiper-slide"><img src="./src/gallery/carry.jpg"></div>
+      <div class="swiper-slide"><img src="./src/gallery/iitp.jpg"></div>
+      <div class="swiper-slide"><img src="./src/gallery/test drive.jpg"></div>
+      <div class="swiper-slide"><img src="./src/gallery/team three.jpg"></div>
+      <div class="swiper-slide"><img src="./src/gallery/team two.jpg"></div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+
 
     <div class="container reveal">
       <h2>About Us</h2>
+      <div style="max-width: 800px; margin: 0 auto;">
+  <!-- ABU Robocon Website Embed -->
+  <iframe src="https://www.robocontv.com/" style="width: 100%; height: 400px; border: none;"></iframe>
+
+  <!-- Description of ABU Robocon -->
+  <h2 style="text-align: center; margin-top: 20px;">ABU Robocon</h2>
+  <p style="text-align: justify;">
+    ABU Robocon, short for Asia-Pacific Broadcasting Union Robotic Contest, is an annual international robotics competition that brings together university students from different countries in the Asia-Pacific region. The competition aims to promote friendship and exchange among young people with similar interests in robotics and automation.
+  </p>
+  <p style="text-align: justify;">
+    Each year, a new theme is announced for the competition, and participating teams are required to build robots that can complete specific tasks related to that theme. The teams are given a set of rules and limitations to follow, and they have to design, build, and program their robots accordingly to achieve the objectives of the game.
+  </p>
+
+  <!-- Bootstrap Effects -->
+  <h3 style="text-align: center; margin-top: 30px;">Bootstrap Effects</h3>
+  <!-- Bootstrap Alert -->
+  <div class="alert alert-success" role="alert" style="margin-top: 10px;">
+    This is a success alert box using Bootstrap classes.
+  </div>
+
+  <!-- Bootstrap Card -->
+  <div class="card" style="width: 18rem; margin-top: 20px;">
+    <img src="robot.jpg" class="card-img-top" alt="Robot Image">
+    <div class="card-body">
+      <h5 class="card-title">Robocon Robot</h5>
+      <p class="card-text">This is an example of a card using Bootstrap classes. It showcases a robot participating in ABU Robocon.</p>
+      <a href="#" class="btn btn-primary">Learn More</a>
+    </div>
+  </div>
+
+
       <p>Team Phoenix is IIT Patna's contingent to the largest and oldest pan-asian robotics contest, ABU ROBOCON. </p>
       
 
@@ -92,10 +162,12 @@
 
 
   </section>
-
+  
+<section id="abu">
+  </section>
   <!-- Team Secction -->
   <section id="team">
-    
+
     <div class="team-section reveal">
      <!-- add a line h1 that says Our Crew and make it span the whole width -->
       <h1 style="width: 100%;">Our Crew</h1>
@@ -386,15 +458,44 @@
         <p>Include a contact form or contact details for inquiries.</p>
         <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.instagram.com/robocon.iitp/" data-iframely-url="//iframely.net/lj9zZEV"></a></div></div><script async src="//iframely.net/embed.js"></script>
       </div>
+      <ul class="list-inline mb-0 text-center">
+        <li class="list-inline-item">
+          <a href=""><span class="fa fa-linkedin"></span></a>
+        </li>
+        <li class="list-inline-item">
+          <a href=""><span class="fa fa-facebook"></span></a>
+        </li>
+        <li class="list-inline-item">
+          <a href=""><span class="fa fa-instagram"></span></a>
+        </li>
+        <li class="list-inline-item">
+          <a href=""><span class="fa fa-envelope-o"></span></a>
+        </li>
+      </ul>
+        <style>
+          .list-inline-item a {
+            font-size: 30px; /* Change the icon size as desired */
+            color: rgb(255, 255, 255); /* Set the default icon color */
+            transition: transform 0.3s ease, color 0.3s ease; /* Add color transition */
+          }
+        
+          .list-inline-item a:hover {
+            transform: scale(1.5); /* Increase the size on hover */
+            color: rgb(255, 115, 0); /* Change the color on hover */
+          }
+        </style>
     </section>
 
 
-    <!-- Footer -->
-    <footer>
-      <div class="container-foot" style="justify-content: space-around; align-self: center;">
-        <p>&copy; 2023 Robocon IIT Patna. All rights reserved.</p>
-      </div>
-    </footer>
+<!-- Footer -->
+<footer>
+  
+  <div class="container-foot" style="color: rgb(255, 255, 255); text-align: center;">
+    <p>&copy; 2023 Robocon IIT Patna. All rights reserved.</p>
+  </div>
+  
+</footer>
+
 
     
     <!-- Scroll to load script -->
@@ -419,6 +520,31 @@
 
   </script>
   
+<script>
+  const swiper = new Swiper('.sample-slider', {
+      loop: true,                         //loop
+      effect: "cube",                     //make slider cube
+      cubeEffect: {
+          slideShadows: true,             // Presence of shadows on the slide surface
+          shadow: true,                   // Presence of shadows below the slide
+          shadowOffset: 100,              // Position of shadows below the slide (in pixels)
+          shadowScale: 0.8,                 // Size Ratio of shadows below the slide (0~1)
+      },
+      grabCursor: true,                   //grab cursor
+      speed: 1500,                        //slide speed
+      autoplay: {                         //auto play
+          delay: 2000,  
+      },                   
+      pagination: {                       //pagination(dots)
+          el: '.swiper-pagination',
+      },
+      navigation: {                       //navigation(arrows)
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  })
+
+</script>
 </body>
 
 </html>

@@ -8,7 +8,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Jura', sans-serif;
-  background-color: #0e0e0e;
 }
 #vantajs {
   position: relative;
@@ -19,7 +18,7 @@ body {
 }
 .container {
   max-width: max-content;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 20px;
   align-items: center;
 }
@@ -91,12 +90,12 @@ body {
 /* Navigation Bar */
 nav {
   width: 100%;
-  background: rgb(0, 0, 0);
+  background: #E8E8E8;
   /* Add shadow and animation */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
   /* Center the elements */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   position: sticky;
   text-decoration: none;
   top: 0;
@@ -191,7 +190,7 @@ nav ul {
   display: flex;
   margin: 0;
   padding: 0 100px;
-  justify-content: flex-end;
+  justify-content: right;
 }
 
 nav ul li {
@@ -201,21 +200,35 @@ nav ul li {
 nav ul li a {
   display: block;
   color: rgb(255, 132, 0);
-  background-color: #000000;
+  background-color: #E8E8E8;
   padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 50px; /**  Rarely used! **/
+  text-decoration: none;
+  font-size: x-large;
+  /* text-transform: ; */
+  justify-content: right;
+  font-weight:bolder;
+  line-height: 70px; /**  Rarely used! **/
 }
 
 nav ul li a:hover,
 nav ul li a.active {
   background: rgb(255, 132, 0);
   color: #000000;
+  text-decoration: none;
+}
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
 }
 
 body {
-  background-color: #1d1d1d;
+  background-color: #000000;
   margin: 0;
   padding: 0;
 }
@@ -305,6 +318,10 @@ h2 {
 
 /* About Section */
 #about {
+  background-image: url("./src/gallery/about-us-bg.jpg");
+  /* make the background image 60% opaque */
+  
+  opacity: 80%;
   background-color: #ffc89e;
   padding: 50px 0;
   text-align: center;
@@ -313,11 +330,11 @@ h2 {
 #about h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 #about p {
-  color: #000000;
+  color: #ffffff;
   font-size: 18px;
 }
 
@@ -393,6 +410,20 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 .team-card {
   width: calc(100% / 10);
@@ -403,6 +434,8 @@ h2 {
   overflow: hidden;
   box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
   transition: transform 0.3s ease-in-out;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .team-card:hover {
@@ -561,7 +594,8 @@ padding: 16px,32px;
 
 .instagram-container {
  display: inline-block;
-  margin: 10px;
+  margin: 0;
+  padding: 10px;
   
 }
 
@@ -627,13 +661,13 @@ footer {
   background-color: #ff797900;
   /* padding: 10px 20px; */
   text-align: right;
-  height: 20px;
+  height:25px;
 }
 
 footer p {
   font-size: 16px;
   font-weight: 500;
-  color: #DC5F00;
+  color: #ffffff;
 }
 
 /* other */
@@ -642,6 +676,25 @@ footer p {
   text-align: center;
 }
 
+.type-wrap {
+  font-size: 50px;
+  padding: 20px;
+}
+
+/* the above is for styling puposes only */
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 p {
   color: #2e2e2e;
   margin-bottom: 20px;

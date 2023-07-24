@@ -27,3 +27,4 @@ function handleIntersection(entries, observer) {
     observer.observe(element);
   });
   
+  
