@@ -284,7 +284,7 @@ h1 {
 }
 
 
-Home Section
+/* Home Section */
 #home {
   font-family: "Casanova Scotia", cursive;
   background-image: url("image.jpg");
@@ -354,30 +354,6 @@ h2 {
   font-size: 18px;
 }
 
-.team-cards{
-  display: flex;
-  flex-direction: column;
-}
-.team-row
-{
-  display: flex;
-  justify-content: space-around;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-.team-front
-{
-	width:100%;
-	height:auto;
-	position:relative;
-	z-index:10;
-	background:#000000;
-	padding:5px;
-	bottom:0px;
-	transition: all 0.5s ease;
-}
-
-
 /* Gallery Section */
 #gallery {
   background-color: rgb(232, 232, 232);
@@ -399,17 +375,7 @@ h2 {
   color: #DC5F00;
   font-size: 18px;
 }
-.team-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: rgb(232, 232, 232);
-}
-.team-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -425,39 +391,57 @@ h2 {
   background: #555;
 }
 
+/* Team */
+
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #c0c0c0;
+  
+}
+.team-row{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
 .team-card {
-  width: calc(100% / 10);
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 5);
   max-width: 150px;
   margin: 6px;
-  background-color: #ebebeb;
+  background: linear-gradient(180deg, #F6F6F6 0%, #FFF 100%);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+  box-shadow: 0px 0px 5.374309539794922px 0px #E7E7E7;
   transition: transform 0.3s ease-in-out;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .team-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-15px);
 }
 
 .card-content {
-  padding: 3px;
+  padding-top: 10px;
+  padding: 10px 5px;
   text-align: center;
 }
 
 .team-card img {
-  width: 150px; /* Adjust the desired fixed width */
-  height: 150px; /* Adjust the desired fixed height */
+  width: 100px; /* Adjust the desired fixed width */
+  height: 100px; /* Adjust the desired fixed height */
   object-fit: cover;
-  border-radius: 90%;
+  border-radius: 167.288px;
 }
 
 .team-card h3 {
   margin-top: 5px;
+  padding: 5px;
+  color: #000;
 }
-
 /* Media queries for responsiveness */
 
 @media screen and (max-width: 1468px) {
@@ -788,7 +772,7 @@ section
 /* Scroll to Load*/
 .reveal{
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(125px);
   opacity: 0;
   transition: all ease 1s;
 }
