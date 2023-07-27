@@ -13,7 +13,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-  <script src="app.js" defer></script>
+  <script src="app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
 
 
@@ -23,18 +23,24 @@
   <!-- Your HTML code here -->
 
   <!-- Navigation bar -->
-  <nav height="3vh" class="animate-glow">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="gallery.html">Gallery</a></li> <!-- Added gallery link -->
-      <li><a href="#resources">Resources</a></li>
-      <li><a href="#contact">Contact</a></li>
-
-    </ul>
-  </nav>
+  <div class="nav">
+    <nav class="nav-wrapper">
+      <div class="name-wrapper">
+        <span class="Team">Team</span>
+        <span class="Phoenix">Phoenix</span>
+      </div>
+      <ul class="navigation">
+        <li class="parent"><a class="link" href="#home">Home</a></li>
+        <li class="parent"><a class="link" href="#about">About</a></li>
+        <!-- <li class="parent"><a class="link" href="#project">Project</a></li> -->
+        <li class="parent"><a class="link" href="#team">Team</a></li>
+        <li class="parent"><a class="link" href="#gallery">Gallery</a></li>
+        <li class="parent"><a class="link" href="#resources">Resources</a></li>
+        <li class="parent"><a class="link" href="#sponsors">Sponsors</a></li>
+        <li class="parent"><a class="link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <style>
     /* Add this style to create the dark overlay */
@@ -64,85 +70,18 @@
   <!-- About Section -->
   
   <section id="about" data-mdb-animation-start="onScroll" class="slide-in parallax">
-    
-    
-<style>
-  .sample-slider{
-      width:50%;
-  }
-  .sample-slider img{
-      width: 100%;
-      height: auto;
-  }
-</style>
-<style>
-  .parallax {
-    /* The image used */
-    background-image: url("img_parallax.jpg");
-  
-    /* Set a specific height */
-    min-height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  </style>
-
-<div class="swiper sample-slider">
-  <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./src/gallery/poster one.jpg"></div>
-      <div class="swiper-slide"><img src="./src/gallery/carry.jpg"></div>
-      <div class="swiper-slide"><img src="./src/gallery/iitp.jpg"></div>
-      <div class="swiper-slide"><img src="./src/gallery/test drive.jpg"></div>
-      <div class="swiper-slide"><img src="./src/gallery/team three.jpg"></div>
-      <div class="swiper-slide"><img src="./src/gallery/team two.jpg"></div>
-  </div>
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
-
-
-
     <div class="container reveal">
       <h2>About Us</h2>
-      <div style="max-width: 800px; margin: 0 auto;">
-  <!-- ABU Robocon Website Embed -->
-  <iframe src="https://www.robocontv.com/" style="width: 100%; height: 400px; border: none;"></iframe>
 
-  <!-- Description of ABU Robocon -->
-  <h2 style="text-align: center; margin-top: 20px;">ABU Robocon</h2>
-  <p style="text-align: justify;">
-    ABU Robocon, short for Asia-Pacific Broadcasting Union Robotic Contest, is an annual international robotics competition that brings together university students from different countries in the Asia-Pacific region. The competition aims to promote friendship and exchange among young people with similar interests in robotics and automation.
-  </p>
-  <p style="text-align: justify;">
-    Each year, a new theme is announced for the competition, and participating teams are required to build robots that can complete specific tasks related to that theme. The teams are given a set of rules and limitations to follow, and they have to design, build, and program their robots accordingly to achieve the objectives of the game.
-  </p>
-
-  <!-- Bootstrap Effects -->
-  <h3 style="text-align: center; margin-top: 30px;">Bootstrap Effects</h3>
-  <!-- Bootstrap Alert -->
-  <div class="alert alert-success" role="alert" style="margin-top: 10px;">
-    This is a success alert box using Bootstrap classes.
-  </div>
-
-  <!-- Bootstrap Card -->
-  <div class="card" style="width: 18rem; margin-top: 20px;">
-    <img src="robot.jpg" class="card-img-top" alt="Robot Image">
-    <div class="card-body">
-      <h5 class="card-title">Robocon Robot</h5>
-      <p class="card-text">This is an example of a card using Bootstrap classes. It showcases a robot participating in ABU Robocon.</p>
-      <a href="#" class="btn btn-primary">Learn More</a>
-    </div>
-  </div>
-
-
+      <!-- Description of ABU Robocon -->
+      <!-- <h2 style="text-align: center; margin-top: 20px;">ABU Robocon</h2> -->
+      <p style="text-align: justify;">
+        ABU Robocon, short for Asia-Pacific Broadcasting Union Robotic Contest, is an annual international robotics competition that brings together university students from different countries in the Asia-Pacific region. The competition aims to promote friendship and exchange among young people with similar interests in robotics and automation.
+      </p>
+      <p style="text-align: justify;">
+        Each year, a new theme is announced for the competition, and participating teams are required to build robots that can complete specific tasks related to that theme. The teams are given a set of rules and limitations to follow, and they have to design, build, and program their robots accordingly to achieve the objectives of the game.
+      </p>
       <p>Team Phoenix is IIT Patna's contingent to the largest and oldest pan-asian robotics contest, ABU ROBOCON. </p>
-      
-
       <div class="instagram-container">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Ct8cSHKxnS-/"
           data-instgrm-version="13">
@@ -159,12 +98,8 @@
         <script async src="//www.instagram.com/embed.js"></script>
       </div>
     </div>
-
-
   </section>
   
-<section id="abu">
-  </section>
   <!-- Team Secction -->
   <section id="team">
 
@@ -175,8 +110,8 @@
       <br>
       <h2 class="Junior reveal" style="text-align: center; width: 100%; justify-self: center;">Junior Year</h2>
       <br>
-      <div class="team-column">
-        <div class="team-row reveal">
+      <div class="team-column reveal">
+        <div class="team-row">
           <div class="team-card">
             <div class="card-content">
               <img src="/src/photos/img.jpg" alt="Team Member 1">
@@ -208,7 +143,7 @@
             </div>
           </div>
         </div>
-        <div class="team-row reveal">
+        <div class="team-row ">
           <div class="team-card">
             <div class="card-content">
               <img src="/src/photos/jeevan.jpg" alt="Team Member 1">
@@ -237,8 +172,8 @@
       </div>
       <h2 class="Sophomore reveal" style="text-align: center; width: 100%; justify-self: center;">Sophomore Year</h2>
       <br>
-      <div class="team-column-sopho">
-        <div class="team-row reveal">
+      <div class="team-column reveal">
+        <div class="team-row">
           <div class="team-card">
             <div class="card-content">
               <img src="/src/photos/satyam.jpg" alt="Team Member 1">
@@ -271,7 +206,7 @@
             </div>
           </div>
         </div>
-        <div class="team-row reveal">
+        <div class="team-row ">
           <div class="team-card">
             <div class="card-content">
               <img src="/src/photos/aman.jpg" alt="Team Member 1">
@@ -303,7 +238,7 @@
             </div>
           </div>
         </div>
-        <div class="team-row reveal">
+        <div class="team-row ">
           <div class="team-card">
             <div class="card-content">
               <img src="/src/photos/kashiya.jpg" alt="Team Member 1">
@@ -337,7 +272,7 @@
             </div>
           </div>
         
-        <div class="team-row reveal">
+        <div class="team-row">
           <div class="team-card">
             <div class="card-content">
               <img src="/src/photos/pushpendra.jpg" alt="Team Member 2">
@@ -359,7 +294,7 @@
 
   <!-- Gallery Section -->
 
-  <section id="gallery" class="" >
+  <section id="gallery" >
   
     <div class="container reveal">
       <h2>Gallery</h2>
@@ -372,22 +307,22 @@
           <div class="photo">
             <img src="/src/gallery/team two.jpg">
             <div class="year"><a href="gallery.html"><button class="btn btn-neomorphic">Year</button></a></div>
-
           </div>
           <div class="photo">
             <img src="/src/gallery/carry.jpg">
             <div class="year"><a href="gallery.html"><button class="btn btn-neomorphic">Year</button></a></div>
           </div>
         </div>
-
       </div>
 
       <a href="gallery.html" style="margin-top: 50px;"><button class="btn btn-neomorphic">Gallery</button></a>
       <!-- Added gallery shortcut button -->
     </div>
-    
+  </section>
+  <!-- Resources Section -->
+  <section id="resources">
+    <div class="resource reveal">
       <h2>Resources</h2>
-        
       <div class="resource-cards">
         <!-- Resource cards -->
         <div class="resource-card">
@@ -406,12 +341,10 @@
           <h3>Financial Documentation</h3>
           <a href="https://cciitpatna-my.sharepoint.com/:x:/g/personal/robocon_iitp_ac_in/EfhCdw4MvRxFj-AtRtEJ-VoBHLu5M3cvCcFTzLrbmhKoag?email=piyush_2101me47%40iitp.ac.in&e=YQENm6"><button class="btn btn-neomorphic">Click Me</button></a>
         </div>
-
       </div>
     </div>
-    </div>
   </section>
-  <section>
+  <section id="sponsors">
     <div class="demo-row reveal">
       <div class="container" id="id-sponsors">
         <div class="text-center">
@@ -420,42 +353,40 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <div class="row">
+            <div class="spons-row">
               <div class="col-sm-3 col-xs-6">
-                <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/nucor-logo.svg" style="width: 200px;" /></div>
+                <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/nucor-logo.svg" height="15 px"/></div>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/logo-mil.png" style="width: 155px;" /></div>
+                <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/logo-mil.png" height="50px"/></div>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/logo-timberline.jpg" style="width: 200px;" /></div>
+                <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/logo-timberline.jpg" height="15px"/></div>
               </div>
-            </div>
-          </div>
-          
             </div>
           </div>
         </div>
-      </section>
-  <!-- Resources Section -->
+    </div>
+  </section>
+  
 
 
-    <style>
-      #bg-wrap {
-        height: 10vh;
-        /* Set the height to 20% of the viewport height */
-        overflow: hidden;
-      }
+  <style>
+    #bg-wrap {
+      height: 10vh;
+      /* Set the height to 20% of the viewport height */
+      overflow: hidden;
+    }
 
-      #vantajs {
-        width: auto;
-        height: auto;
-        margin-bottom: 0;
-      }
-    </style>
-    <section id="contact"
-      style="background-image: url('data:image/svg+xml;utf8,<svg viewBox=&quot;0 0 100 100&quot; preserveAspectRatio=&quot;xMidYMid slice&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;><defs><radialGradient id=&quot;Gradient1&quot; cx=&quot;50%&quot; cy=&quot;50%&quot; fx=&quot;0.441602%&quot; fy=&quot;50%&quot; r=&quot;.5&quot;><animate attributeName=&quot;fx&quot; dur=&quot;34s&quot; values=&quot;0%;3%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><stop offset=&quot;0%&quot; stop-color=&quot;rgba(255, 0, 255, 1)&quot;></stop><stop offset=&quot;100%&quot; stop-color=&quot;rgba(255, 0, 255, 0)&quot;></stop></radialGradient><radialGradient id=&quot;Gradient2&quot; cx=&quot;50%&quot; cy=&quot;50%&quot; fx=&quot;2.68147%&quot; fy=&quot;50%&quot; r=&quot;.5&quot;><animate attributeName=&quot;fx&quot; dur=&quot;23.5s&quot; values=&quot;0%;3%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><stop offset=&quot;0%&quot; stop-color=&quot;rgba(255, 255, 0, 1)&quot;></stop><stop offset=&quot;100%&quot; stop-color=&quot;rgba(255, 255, 0, 0)&quot;></stop></radialGradient><radialGradient id=&quot;Gradient3&quot; cx=&quot;50%&quot; cy=&quot;50%&quot; fx=&quot;0.836536%&quot; fy=&quot;50%&quot; r=&quot;.5&quot;><animate attributeName=&quot;fx&quot; dur=&quot;21.5s&quot; values=&quot;0%;3%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><stop offset=&quot;0%&quot; stop-color=&quot;rgba(0, 255, 255, 1)&quot;></stop><stop offset=&quot;100%&quot; stop-color=&quot;rgba(0, 255, 255, 0)&quot;></stop></radialGradient></defs><rect x=&quot;13.744%&quot; y=&quot;1.18473%&quot; width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;url(%23Gradient1)&quot; transform=&quot;rotate(334.41 50 50)&quot;><animate attributeName=&quot;x&quot; dur=&quot;20s&quot; values=&quot;25%;0%;25%&quot; repeatCount=&quot;indefinite&quot;></animate><animate attributeName=&quot;y&quot; dur=&quot;21s&quot; values=&quot;0%;25%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><animateTransform attributeName=&quot;transform&quot; type=&quot;rotate&quot; from=&quot;0 50 50&quot; to=&quot;360 50 50&quot; dur=&quot;7s&quot; repeatCount=&quot;indefinite&quot;></animateTransform></rect><rect x=&quot;-2.17916%&quot; y=&quot;35.4267%&quot; width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;url(%23Gradient2)&quot; transform=&quot;rotate(255.072 50 50)&quot;><animate attributeName=&quot;x&quot; dur=&quot;23s&quot; values=&quot;-25%;0%;-25%&quot; repeatCount=&quot;indefinite&quot;></animate><animate attributeName=&quot;y&quot; dur=&quot;24s&quot; values=&quot;0%;50%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><animateTransform attributeName=&quot;transform&quot; type=&quot;rotate&quot; from=&quot;0 50 50&quot; to=&quot;360 50 50&quot; dur=&quot;12s&quot; repeatCount=&quot;indefinite&quot;></animateTransform></rect><rect x=&quot;9.00483%&quot; y=&quot;14.5733%&quot; width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;url(%23Gradient3)&quot; transform=&quot;rotate(139.903 50 50)&quot;><animate attributeName=&quot;x&quot; dur=&quot;25s&quot; values=&quot;0%;25%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><animate attributeName=&quot;y&quot; dur=&quot;12s&quot; values=&quot;0%;25%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><animateTransform attributeName=&quot;transform&quot; type=&quot;rotate&quot; from=&quot;360 50 50&quot; to=&quot;0 50 50&quot; dur=&quot;9s&quot; repeatCount=&quot;indefinite&quot;></animateTransform></rect></svg>');">
-      <div class="container reveal">
+    #vantajs {
+      width: auto;
+      height: auto;
+      margin-bottom: 0;
+    }
+  </style>
+  <section id="contact" style="background-image: url('data:image/svg+xml;utf8,<svg viewBox=&quot;0 0 100 100&quot; preserveAspectRatio=&quot;xMidYMid slice&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;><defs><radialGradient id=&quot;Gradient1&quot; cx=&quot;50%&quot; cy=&quot;50%&quot; fx=&quot;0.441602%&quot; fy=&quot;50%&quot; r=&quot;.5&quot;><animate attributeName=&quot;fx&quot; dur=&quot;34s&quot; values=&quot;0%;3%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><stop offset=&quot;0%&quot; stop-color=&quot;rgba(255, 0, 255, 1)&quot;></stop><stop offset=&quot;100%&quot; stop-color=&quot;rgba(255, 0, 255, 0)&quot;></stop></radialGradient><radialGradient id=&quot;Gradient2&quot; cx=&quot;50%&quot; cy=&quot;50%&quot; fx=&quot;2.68147%&quot; fy=&quot;50%&quot; r=&quot;.5&quot;><animate attributeName=&quot;fx&quot; dur=&quot;23.5s&quot; values=&quot;0%;3%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><stop offset=&quot;0%&quot; stop-color=&quot;rgba(255, 255, 0, 1)&quot;></stop><stop offset=&quot;100%&quot; stop-color=&quot;rgba(255, 255, 0, 0)&quot;></stop></radialGradient><radialGradient id=&quot;Gradient3&quot; cx=&quot;50%&quot; cy=&quot;50%&quot; fx=&quot;0.836536%&quot; fy=&quot;50%&quot; r=&quot;.5&quot;><animate attributeName=&quot;fx&quot; dur=&quot;21.5s&quot; values=&quot;0%;3%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><stop offset=&quot;0%&quot; stop-color=&quot;rgba(0, 255, 255, 1)&quot;></stop><stop offset=&quot;100%&quot; stop-color=&quot;rgba(0, 255, 255, 0)&quot;></stop></radialGradient></defs><rect x=&quot;13.744%&quot; y=&quot;1.18473%&quot; width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;url(%23Gradient1)&quot; transform=&quot;rotate(334.41 50 50)&quot;><animate attributeName=&quot;x&quot; dur=&quot;20s&quot; values=&quot;25%;0%;25%&quot; repeatCount=&quot;indefinite&quot;></animate><animate attributeName=&quot;y&quot; dur=&quot;21s&quot; values=&quot;0%;25%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><animateTransform attributeName=&quot;transform&quot; type=&quot;rotate&quot; from=&quot;0 50 50&quot; to=&quot;360 50 50&quot; dur=&quot;7s&quot; repeatCount=&quot;indefinite&quot;></animateTransform></rect><rect x=&quot;-2.17916%&quot; y=&quot;35.4267%&quot; width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;url(%23Gradient2)&quot; transform=&quot;rotate(255.072 50 50)&quot;><animate attributeName=&quot;x&quot; dur=&quot;23s&quot; values=&quot;-25%;0%;-25%&quot; repeatCount=&quot;indefinite&quot;></animate><animate attributeName=&quot;y&quot; dur=&quot;24s&quot; values=&quot;0%;50%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><animateTransform attributeName=&quot;transform&quot; type=&quot;rotate&quot; from=&quot;0 50 50&quot; to=&quot;360 50 50&quot; dur=&quot;12s&quot; repeatCount=&quot;indefinite&quot;></animateTransform></rect><rect x=&quot;9.00483%&quot; y=&quot;14.5733%&quot; width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;url(%23Gradient3)&quot; transform=&quot;rotate(139.903 50 50)&quot;><animate attributeName=&quot;x&quot; dur=&quot;25s&quot; values=&quot;0%;25%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><animate attributeName=&quot;y&quot; dur=&quot;12s&quot; values=&quot;0%;25%;0%&quot; repeatCount=&quot;indefinite&quot;></animate><animateTransform attributeName=&quot;transform&quot; type=&quot;rotate&quot; from=&quot;360 50 50&quot; to=&quot;0 50 50&quot; dur=&quot;9s&quot; repeatCount=&quot;indefinite&quot;></animateTransform></rect></svg>');">
+    <div class="contact reveal">
+      <div class="container">
         <h2>Contact Us</h2>
         <p>Include a contact form or contact details for inquiries.</p>
         <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.instagram.com/robocon.iitp/" data-iframely-url="//iframely.net/lj9zZEV"></a></div></div><script async src="//iframely.net/embed.js"></script>
@@ -480,73 +411,26 @@
             color: rgb(255, 255, 255); /* Set the default icon color */
             transition: transform 0.3s ease, color 0.3s ease; /* Add color transition */
           }
-        
+          
           .list-inline-item a:hover {
             transform: scale(1.5); /* Increase the size on hover */
             color: rgb(255, 115, 0); /* Change the color on hover */
           }
         </style>
-    </section>
+    </div>
+  </section>
 
 
-<!-- Footer -->
-<footer>
-  
-  <div class="container-foot" style="color: rgb(255, 255, 255); text-align: center;">
-    <p>&copy; 2023 Robocon IIT Patna. All rights reserved.</p>
-  </div>
-  
-</footer>
-
-
+  <!-- Footer -->
+  <footer>
     
-    <!-- Scroll to load script -->
-    <script type="text/JavaScript">
-    window.addEventListener('scroll' , reveal);
-
-    function reveal() {
-      var reveals = document.querySelectorAll('.reveal');
-
-      for(var i=0; i<reveals.length; i++){
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint=125;
-
-        if(revealtop < windowheight-revealpoint){
-          reveals[i].classList.add('active');
-        }
-
-      }
-      
-    }
-
-  </script>
+    <div class="container-foot" style="color: rgb(255, 255, 255); text-align: center;">
+      <p>&copy; 2023 Robocon IIT Patna. All rights reserved.</p>
+    </div>
+    
+  </footer>
   
-<script>
-  const swiper = new Swiper('.sample-slider', {
-      loop: true,                         //loop
-      effect: "cube",                     //make slider cube
-      cubeEffect: {
-          slideShadows: true,             // Presence of shadows on the slide surface
-          shadow: true,                   // Presence of shadows below the slide
-          shadowOffset: 100,              // Position of shadows below the slide (in pixels)
-          shadowScale: 0.8,                 // Size Ratio of shadows below the slide (0~1)
-      },
-      grabCursor: true,                   //grab cursor
-      speed: 1500,                        //slide speed
-      autoplay: {                         //auto play
-          delay: 2000,  
-      },                   
-      pagination: {                       //pagination(dots)
-          el: '.swiper-pagination',
-      },
-      navigation: {                       //navigation(arrows)
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-      },
-  })
-
-</script>
+  
 </body>
 
 </html>
